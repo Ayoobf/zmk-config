@@ -22,7 +22,7 @@
 #define FUN 6
 
 &mt {
-    quick-tap-ms = <125>;
+    quick-tap-ms = <126>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
