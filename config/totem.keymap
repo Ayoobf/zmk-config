@@ -13,6 +13,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/totem.h"
+
 #define BASE 0
 #define NAV 1
 #define MOUSE 2
