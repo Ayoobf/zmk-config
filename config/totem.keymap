@@ -30,12 +30,6 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH0 LH1 LH2 RH0 RH1 RH2
 
-&mt {
-    quick-tap-ms = <126>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-};
 
 ZMK_HOLD_TAP(hml, 
     flavor = "balanced";
@@ -46,12 +40,6 @@ ZMK_HOLD_TAP(hml,
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
 )
-
-&lt {
-    tapping-term-ms = <250>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
 
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
