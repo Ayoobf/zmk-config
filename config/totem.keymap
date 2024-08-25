@@ -27,7 +27,7 @@
 #define Gameplus    9
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <110>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
