@@ -56,19 +56,6 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
-&mt {
-    quick-tap-ms = <110>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
-
-&lt {
-    tapping-term-ms = <250>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
-
 / {
     
 
