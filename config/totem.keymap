@@ -39,7 +39,6 @@
         hold-trigger-key-positions = <KEYS_R THUMBS>;
         hold-trigger-on-release;
         };
-        
     hmr: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_RIGHT";
@@ -52,7 +51,7 @@
         hold-trigger-key-positions = <KEYS_L THUMBS>;
         hold-trigger-on-release;
         };
-    };
+    
 
     combos {
         compatible = "zmk,combos";
