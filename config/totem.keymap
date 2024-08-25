@@ -34,7 +34,12 @@
 #define Game        8
 #define Gameplus    9
 
-
+ZMK_HOLD_TAP(hrm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
 
 &mt {
     quick-tap-ms = <110>;
@@ -78,7 +83,7 @@
             label = "Base";
             bindings = <
                    &kp Q       &kp W          &kp E         &kp R      &kp T    &kp Y        &kp U        &kp I       &kp O               &kp P
-              &hm LGUI A  &hm LALT S    &hm LCTRL D  &hm LSHIFT F      &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
+              &hrm LGUI A  &hm LALT S    &hm LCTRL D  &hm LSHIFT F      &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
 &lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B    &kp N        &kp M    &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
                                       &mt LCTRL DEL     &lt 1 TAB  &kp SPACE  &kp RET   &lt 2 BSPC    &kp MINUS
             >;
