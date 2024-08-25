@@ -48,7 +48,7 @@
 };
 
 
-/ {
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -143,4 +143,3 @@
             label = "Gaming+";
         };
     };
-};
