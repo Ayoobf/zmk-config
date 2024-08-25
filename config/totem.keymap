@@ -34,12 +34,7 @@
 #define Game        8
 #define Gameplus    9
 
-ZMK_HOLD_TAP(hrm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp>, <&kp>;
-)
+
 
 &mt {
     quick-tap-ms = <110>;
@@ -58,6 +53,12 @@ ZMK_HOLD_TAP(hrm, hold_tap,
 / {
     
     behaviors {
+        ZMK_HOLD_TAP(hrm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
