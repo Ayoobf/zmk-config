@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/totem.h"
+#include "zmk-helpers/key-labels/Totem.h"
 
 #define Base        0
 #define Media       1
