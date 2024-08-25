@@ -20,11 +20,9 @@
 
 #define BASE 0
 #define NAV 1
-#define MOUSE 2
-#define MEDIA 3
-#define NUM 4
-#define SYM 5
-#define FUN 6
+#define NUM 2
+#define SYM 3
+#define FUN 4
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4 LB5 // left hand
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 RB5 // right hand
@@ -39,6 +37,8 @@ ZMK_HOLD_TAP(hml,
     bindings = <&kp>, <&kp>;
 )
 
+
+
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -52,14 +52,13 @@ ZMK_LAYER(default_layer,
                          &kp Q  &kp W        &kp E         &kp R         &kp T      &kp Y      &kp U            &kp I         &kp O    &kp P
                 &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G      &kp H      &hmr RSHFT J     &hmr RCTRL K  &hmr LALT L    &hmr LGUI SEMI
 &kp LEFT_SHIFT  &kp Z  &kp X        &kp C         &kp V         &kp B      &kp N      &kp M            &kp COMMA     &kp DOT  &kp SLASH  &kp BSPC
-                                             &lt 3 ESC     &lt 1 SPACE   &kp TAB    &kp ENTER  &lt 3 BACKSPACE  &lt 4 DEL
-
+                                             &kp ESC     &lt 1 SPACE   &kp TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &lt 4 DEL
 )
 
 ZMK_LAYER(nav_layer,
         &trans    &trans    &trans     &trans     &trans    &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT  &kp K_UNDO
         &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &trans    &kp LEFT    &kp DOWN       &kp UP         &kp RIGHT  &kp CAPSLOCK
-&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME    &kp HOME       &kp PAGE_DOWN  &kp END    &kp END       &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME    &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP    &kp END       &trans
                             &trans     &trans     &trans    &kp ENTER   &kp BACKSPACE  &kp DELETE
 
 )
